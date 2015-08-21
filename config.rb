@@ -19,8 +19,8 @@ activate :sprockets
 ## Site-wide settings
 ####
 
-set :full_name, "Ada Lovelace"
-set :city, "London, England"
+set :full_name, "Ling Meng"
+set :city, "Waterloo, Canada"
 set :resume, nil # Set to filename of resume PDF in source directory.
 set :google_analytics_tracking_id, "UA-111111111-11"
 
@@ -33,12 +33,12 @@ set :google_analytics_tracking_id, "UA-111111111-11"
 # This is the id for your profile URL: https://plus.google.com/https://plus.google.com/110506932842622114536/
 set :google_plus_user_id, "110506932842622114536"
 # This is your shortname for your profile URL: http://facebook.com/ada.lovelace
-set :facebook_profile_name, "ada.lovelace"
+set :facebook_profile_name, "LynnemMeng"
 set :twitter_username, "ada"
 # This is your shortname for your profile URL: http://linkedin.com/in/adalovelace
 set :linkedin_profile_name, "adalovelace"
 set :dribbble_username, "adalovelace"
-set :github_username, "ada"
+set :github_username, "lynnegithub"
 set :gravatar_email_address, "me@adalovelace.com"
 
 Time.zone = "America/Chicago"
@@ -147,7 +147,7 @@ helpers do
 end
 
 # Generate sitemap after build
-activate :sitemap_generator 
+activate :sitemap_generator
 
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet
@@ -161,7 +161,7 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
 
-  activate :minify_css        
+  activate :minify_css
   activate :minify_javascript
 
   # Enable cache buster
