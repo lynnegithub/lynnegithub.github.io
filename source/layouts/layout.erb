@@ -34,8 +34,8 @@
     <%= yield_content :head %>
   </head>
   <body class="<%= current_page.data.body_class || page_classes %>">
-    
-    <div id="root">  
+
+    <div id="root">
       <!-- Logo & Top Nav -->
       <nav class="top-bar">
         <ul class="title-area">
@@ -67,13 +67,13 @@
           <%= social_network_link(
             'LinkedIn',
             linkedin_profile_name,
-            "http://linkedin.com/in/#{ linkedin_profile_name}"
+            "http://linkedin.com/in/#{linkedin_profile_name}"
           ) %>
           <%= social_network_link(
             'Dribble',
             dribbble_username,
             "http://dribble.com/#{dribbble_username}"
-          ) %>    
+          ) %>
           <%= social_network_link(
             'Github',
             github_username,
@@ -113,7 +113,7 @@
       <div id="ie-warning">
         <h1>Did you know that your copy of Internet Explorer is terribly out of date?</h1>
         <p>
-          To get the best possible experience using our website, we recommend that you upgrade to the latest version or use another web browser. 
+          To get the best possible experience using our website, we recommend that you upgrade to the latest version or use another web browser.
           Any of the following will provide a superior experience, not only on this site, but across the web.
         </p>
         <p>Just click one of the icons below to get to the download page.</p>
