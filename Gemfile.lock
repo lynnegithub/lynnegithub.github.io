@@ -4,6 +4,13 @@ GEM
     activesupport (3.2.12)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    bitters (1.0.0)
+      bourbon (>= 3.2)
+      sass (>= 3.2)
+      thor
+    bourbon (3.2.4)
+      sass (~> 3.2)
+      thor
     builder (3.0.4)
     chunky_png (1.2.8)
     coderay (1.0.9)
@@ -95,6 +102,9 @@ GEM
       rouge (~> 0.3.0)
     mini_portile (0.5.0)
     multi_json (1.7.7)
+    neat (1.5.0)
+      bourbon (>= 2.1)
+      sass (>= 3.2)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.6.8)
@@ -149,6 +159,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bitters
+  bourbon
   builder (~> 3.0.0)
   compass
   forgery
@@ -159,8 +171,12 @@ DEPENDENCIES
   middleman-deploy
   middleman-smusher
   middleman-syntax
+  neat
   nokogiri
   redcarpet
   sitemap_generator
   tzinfo
   zurb-foundation (~> 4.2.2)
+
+BUNDLED WITH
+   1.10.6

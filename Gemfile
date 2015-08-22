@@ -15,6 +15,9 @@ gem "gravatar-ultimate"
 gem "middleman-syntax"
 gem "middleman-smusher"
 gem "middleman-deploy"
+gem "bitters"
+gem "bourbon"
+gem "neat"
 
 gem "rb-inotify" if RUBY_PLATFORM =~ /linux/i
 gem "therubyracer" if RUBY_PLATFORM =~ /linux/i

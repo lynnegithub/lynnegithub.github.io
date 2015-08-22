@@ -19,7 +19,7 @@
 
     <title><%= data.page.title ? full_name + ' | ' + data.page.title : full_name %></title>
 
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
     <%= stylesheet_link_tag "application" %>
     <%= yield_content :stylesheets %>
 
@@ -65,14 +65,14 @@
             "http://twitter.com/#{twitter_username}"
             ) %>
           <%= social_network_link(
+            '500px',
+            px_profile_name,
+            "http://500px.com/#{px_profile_name}"
+          ) %>
+          <%= social_network_link(
             'LinkedIn',
             linkedin_profile_name,
             "http://linkedin.com/in/#{linkedin_profile_name}"
-          ) %>
-          <%= social_network_link(
-            'Dribble',
-            dribbble_username,
-            "http://dribble.com/#{dribbble_username}"
           ) %>
           <%= social_network_link(
             'Github',
