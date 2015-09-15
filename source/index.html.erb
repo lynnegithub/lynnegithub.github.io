@@ -4,26 +4,14 @@
   </div>
 
   <div class="bio">
-    <h2>Hello there! I'm <%= full_name %>.</h2>
-    <h3>I'm a full-stack web developer living in <%= city %>.</h3>
+    <h2>Hello there! This is <%= full_name %>.</h2>
+    <h4>A 3A software engineering student in University of Waterloo.</h4>
+    <p>I am working very hard on the new version of my site. It will bring a lot of new features. Stay tuned!</p>
     <!-- Short bio about yourself, your skills, whether you're looking for work or not, etc. -->
-    <p><%= lorem.sentences 5 %></p>
   </div>
 </div>
 
 <div class="featured-element-row">
-  <section class="latest-from-blog">
-    <h2>Latest from the blog</h2>
-    <h3><%= link_to page_articles.first.title, page_articles.first %></h3>
 
-    <p><%= page_articles.first.summary %></p>
-  </section>
 
-  <section class="featured-project">
-    <% project = data.projects.select(&:featured).first %>
-
-    <h2>Featured project</h2>
-    <h3><%= link_to project.name, 'portfolio.html' %></h3>
-    <%= link_to(image_tag(project.screenshot), 'portfolio.html') %>
-  </section>
 </div>

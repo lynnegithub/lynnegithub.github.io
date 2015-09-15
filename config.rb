@@ -4,6 +4,7 @@ require 'zurb-foundation'
 require 'gravatar-ultimate'
 
 activate :sprockets
+activate :livereload
 
 # Unfortunately ZURB puts its assets in unconventional paths, so we need to
 # manually add these paths for sprockets to find them. However, the following
@@ -19,10 +20,10 @@ activate :sprockets
 ## Site-wide settings
 ####
 
-set :full_name, "Ada Lovelace"
-set :city, "London, England"
-set :resume, nil # Set to filename of resume PDF in source directory.
-set :google_analytics_tracking_id, "UA-111111111-11"
+set :full_name, "Lynne Meng"
+set :city, "Waterloo, Canada"
+set :resume, "resume.pdf"# Set to filename of resume PDF in source directory.
+set :google_analytics_tracking_id, "UA-67618031-1"
 
 ###
 ## Social network link settings
@@ -31,24 +32,24 @@ set :google_analytics_tracking_id, "UA-111111111-11"
 # To hide one of these profile links, just set it to nil.
 
 # This is the id for your profile URL: https://plus.google.com/https://plus.google.com/110506932842622114536/
-set :google_plus_user_id, "110506932842622114536"
+set :google_plus_user_id, "107283922995500519053"
 # This is your shortname for your profile URL: http://facebook.com/ada.lovelace
-set :facebook_profile_name, "ada.lovelace"
-set :twitter_username, "ada"
+set :facebook_profile_name, "M0Lynne"
+set :twitter_username, "M0Lsilence"
 # This is your shortname for your profile URL: http://linkedin.com/in/adalovelace
-set :linkedin_profile_name, "adalovelace"
-set :dribbble_username, "adalovelace"
-set :github_username, "ada"
-set :gravatar_email_address, "me@adalovelace.com"
+set :linkedin_profile_name, "lynnemeng"
+set :px_username, "lynnemeng"
+set :github_username, "lynnegithub"
+set :gravatar_email_address, "menglingsilence@gmail.com"
 
-Time.zone = "America/Chicago"
+Time.zone = "America/New_York"
 
 
 ###
 ## Blog settings
 ###
 
-set :disqus_shortname, "adas-blog"
+set :disqus_shortname, "lynne-blog"
 
 activate :blog do |blog|
   blog.prefix = "/blog"
@@ -137,7 +138,7 @@ helpers do
       <<-MARKUP
         <li>
           <a href='#{url}'>
-            <span class='hide-for-small'><i class='icon-#{network_name.downcase.gsub(' ', '-')}'></i>
+            <span class='hide-for-small'><i class='fa fa-#{network_name.downcase.gsub(' ', '-')}'></i>
             </span><span class='show-for-small'>#{network_name}</span>
           </a>
         </li>
@@ -147,7 +148,7 @@ helpers do
 end
 
 # Generate sitemap after build
-activate :sitemap_generator 
+activate :sitemap_generator
 
 # Enable syntax highlighting
 set :markdown_engine, :redcarpet
@@ -161,7 +162,7 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
 
-  activate :minify_css        
+  activate :minify_css
   activate :minify_javascript
 
   # Enable cache buster

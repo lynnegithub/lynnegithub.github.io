@@ -29,7 +29,7 @@ $project-screenshot-left-margin: -22px;
 .bio {
   @include grid-column(8);
 
-  h2, h3, p {
+  h2, h4, p {
     color: $bio-foreground-color;
   }
 }
