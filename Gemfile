@@ -9,7 +9,7 @@ gem "compass"
 gem "forgery"
 gem "sitemap_generator"
 gem "tzinfo"
-gem "nokogiri"
+gem "nokogiri",'~> 1.6.7'
 gem "guard-livereload"
 gem "gravatar-ultimate"
 gem "middleman-syntax"

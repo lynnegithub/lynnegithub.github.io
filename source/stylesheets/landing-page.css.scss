@@ -4,7 +4,7 @@
 @import "compass/css3/transform";
 @import "foundation_and_overrides";
 
-$bio-background-color: $primary-color;
+$bio-background-color: #ededed;
 $bio-foreground-color: #000;
 $profile-image-size: 200px;
 $featured-content-header-font-size: 1.6em;
@@ -13,6 +13,7 @@ $project-screenshot-left-margin: -22px;
 @import "theme";
 
 .profile-row {
+   boder-size:0px;
   @include grid-row;
   @include panel($bio-background-color);
 }
